@@ -1,0 +1,49 @@
+1. PLACING AN ORDER /order/addorder
+URL - http://localhost:8080/order/addorder
+URL with offer - http://localhost:8080/order/addorder/FLAT150
+{"customer": {
+        "custId": 1
+        
+    },
+    "product": {
+        "productId": 4
+      
+    },
+    "status": "placed"
+ }
+
+2. ADD OFFER
+http://localhost:8080/offer/addOffer
+{
+    "offerId" : 2,
+    "offerCode" : "FLAT100",
+    "amount" : 100,
+    "validity" : "2023-05-05" 
+}
+
+3- Change order status
+http://localhost:8080/order/shipped/27
+
+{"customer": {
+        "custId": 1
+        
+    },
+    "product": {
+        "productId": 4
+      
+    },
+    "status": "placed"
+ }
+
+
+4-
+http://localhost:8080/order/addorder/FLAT150
+
+ADD PRODUCT
+
+{
+	"productName": "charger",
+	"price":1300,
+	"qty":80
+ }
+
